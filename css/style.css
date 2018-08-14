@@ -1,0 +1,81 @@
+* {
+    font-family: Arial, Helvetica, sans-serif
+}
+/* topbar start */
+.top-bar {
+    padding: 4px 0px;
+    background-color: rgb(5, 5, 110);
+}
+.top-bar ul {
+    float: right;
+    margin: 0;
+}
+.top-bar ul li {
+    display: inline;
+    border-right: solid 1px rgb(133, 133, 133);
+    padding-right: 5px;
+}
+.top-bar .help {
+    border: none;
+}
+.top-bar a {
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+}
+/* topbar end */
+.navigation-bar {
+
+}
+.navigation-bar a {
+    text-decoration: none;
+    color: white;
+}
+.navigation-bar ul {
+    float: right;
+    margin-top: 28px;
+}
+.navigation-bar ul li {
+    display: inline;
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 10px;
+}
+.navigation-bar ul li:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+.hero {
+    position: relative;
+}
+.hero-child {
+    position: absolute;
+    top: 300px;
+    left: 400px;
+}
+.hero-child a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    background-color: rgba(253, 165, 0, 0.953);
+    padding: 12px 10px;
+    border-radius: 8px;
+}
+.smart {
+    margin: 0;
+    border-right: solid 1px black;
+}
+.smart h2 {
+
+}
+.strong {
+    width: 300px;
+    border-right: solid 1px black;
+}
+.strong {
+    margin: 0;
+}
+.stable {
+    margin: 0;
+}
