@@ -25,7 +25,7 @@
     </div>
 </div>
 <div class="navigation-bar container_12">
-    <div class="grid_4">
+    <div class="logo-top grid_4">
         <img src="images/logo.png" alt="grid_4">
     </div>
     <div class="navigation-bar-inner grid_8 ">
@@ -86,8 +86,8 @@
 </div>
 <div class="footer">
     <div class=" container_12">
-        <div class="bullets grid_4">
-            <h2>SERVICES</h2>
+        <div class="bullets remove-left grid_4">
+            <h2>SERVICES</h2>asdfasdf
             <ul>
                 <li>
                     mdrerit sit amet tinunt ac velor
@@ -116,15 +116,21 @@
             </ul>
             <a href="#" class="more">MORE</a>
         </div>
-        <div class="opportunities grid_4">
+        <div class="opportunities remove-left grid_4">
             <h2>OPPORTUNITIES</h2>
             <ul>
-                <li><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio nemo, accusamus iure laudantium vitae veritatis, fuga perferendis veniam</p></li>
-                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda optio deserunt repellendus modi perferendis neque</p></li>
+                <li>
+                    Eu dolor sit
+                    <p>Odio nemo, accusamus iure laudantium vitae veritatis, fuga perferendis veniam Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, commodi. Lorem ipsum dolor sit amet consectetur.</p>
+                </li>
+                <li>
+                    Lorem ipsum dolor
+                    <p>Maiores assumenda optio deserunt repellendus modi perferendis neque Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, doloribus. Lorem ipsum dolor sit amet consectetur.</p>
+                </li>
             </ul>
             <a href="#" class="more">MORE</a>
         </div>
-        <div class="dates grid_4">
+        <div class="dates remove-left grid_4">
             <h2>NEWS</h2>
             <ul>
                 <li class="nov-21">
@@ -132,25 +138,32 @@
                     <h3>NOV</h3>
                 </li>
                 <li><h3>Scuitae ec eget tellus non</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim rerum eos!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </li>
                 <li class="nov-09">
                     <h2>09</h2>
                     <h3>NOV</h3>
                 </li>
                 <li><h3>Mauris accumi diam</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim rerum eos!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </li>
                 <li class="nov-17">
                     <h2>17</h2>
                     <h3>NOV</h3>
                 </li>
                 <li><h3>Aliquam dapibus tincetus</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim rerum eos!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </li>
             </ul>
             <div class="clearfix"></div>
             <a href="#" class="more">MORE</a>
+        </div>
+    </div>
+</div>
+<div class="copyright-wrapper">
+    <div class="container_12">
+        <div class="copyright-child grid_12">
+            <a href="#">DETROIX &copy; 2012 • PRIVACY POLICY</a>
         </div>
     </div>
 </div>
@@ -159,22 +172,32 @@
     $(document).ready(function () {
         console.log('here');
         
-        $( '.image-button1' ).click(function () {
-            console.log('hello1');
+        $( '.image-button1' ).click(function (event) {
+            event.preventDefault();
             $( '.hero-1' ).css( 'z-index', '2' );
             $( '.hero-2' ).css( 'z-index', '1' );
             $( '.hero-3' ).css( 'z-index', '1' );
+            $( '.image-button1' ).css( 'background-color', '#fc8700' );
+            $( '.image-button2' ).css( 'background-color', '#c5d1db' );
+            $( '.image-button3' ).css( 'background-color', '#c5d1db' );
         })
-        $( '.image-button2' ).click(function () {
-            console.log('hello2');
+        $( '.image-button2' ).click(function (event) {
+            event.preventDefault();
             $( '.hero-1' ).css( 'z-index', '1' );
             $( '.hero-2' ).css( 'z-index', '2' );
             $( '.hero-3' ).css( 'z-index', '1' );
+            $( '.image-button1' ).css( 'background-color', '#c5d1db' );
+            $( '.image-button2' ).css( 'background-color', '#fc8700' );
+            $( '.image-button3' ).css( 'background-color', '#c5d1db' );
         })
-        $( '.image-button3' ).click(function () {
+        $( '.image-button3' ).click(function (event) {
+            event.preventDefault();
             $( '.hero-1'  ).css( 'z-index', '1' );
             $( '.hero-2'  ).css( 'z-index', '1' );
             $( '.hero-3' ).css( 'z-index', '2' );
+            $( '.image-button1' ).css( 'background-color', '#c5d1db' );
+            $( '.image-button2' ).css( 'background-color', '#c5d1db' );
+            $( '.image-button3' ).css( 'background-color', '#fc8700' );
         })
     })
 </script>

@@ -4,6 +4,9 @@ body {
     font-family: sans-serif;
     background-color: #f2f5f5;
 }
+.remove-left {
+    margin-left: 0;
+}
 .top-bar {
     font-family: Arial, Helvetica, sans-serif;
     padding: 4px 0px;
@@ -11,14 +14,15 @@ body {
     font-size: 9px;
 }
 .top-bar ul {
-    float: right;
+    text-align: right;
     margin: 0;
 }
 .top-bar ul li {
     display: inline;
     border-right: solid 1px rgb(133, 133, 133);
-    padding-right: 5px;
-    opacity: .6;
+    padding-left: 2px;
+    padding-right: 6px;
+    opacity: .7;
     font-size: 10px;
 }
 .top-bar .help {
@@ -30,32 +34,33 @@ body {
 }
 .top-size {
     font-size: 9px;
-    opacity: .6;
+    opacity: .9;
     padding: 6px;
 }
 /* topbar end */
-.navigation-bar {
-
+.logo-top {
+    margin-left: 0;
 }
+
 .navigation-bar img {
-    margin: 24px 0px;
+    margin: 20px 0px 28px 6px;
 }
 .navigation-bar a {
     text-decoration: none;
     color: white;
 }
 .navigation-bar ul {
-    text-align: right;
     list-style: none;
-    margin: 40px 0px 30px 0px;
+    text-align: right;
+    margin: 42px 0px 26px 0px; 
 }
 .navigation-bar ul li {
     font-family: 'fjalla One', sans-serif;
     display: inline;
     background-color: #101c26;
-    padding: 12px 20px;
+    padding: 11px 20px;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 16px;
 }
 .navigation-bar ul li:hover {
     background-color: #fc8700;
@@ -63,6 +68,7 @@ body {
 }
 .navigation-bar-inner {
     margin-right: 0;
+    margin-left: 22px;
 }
 .hero-wrapper {
     position: relative;
@@ -95,6 +101,9 @@ body {
     background-image: url("../images/hero-3.jpg");
     text-align: center;
 }
+.dots-child .image-button1 {
+    background-color: #fc8700;
+}
 .dots {
 }
 .dots-child {
@@ -119,13 +128,23 @@ body {
     background-color: #fc8700;
 }
 .directives h2 {
-    font-size: 45px;
-    color: #16222e
+    font-family: 'fjalla One', sans-serif;
+    font-size: 54px;
+    color: #16222e;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.directives p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    opacity: .5;
+    line-height: 20px;
 }
 .smart {
     margin: 0;
-    border-right: solid 2px #dee1e3;
-    border-top: solid 2px #dee1e3;
+    border-right: solid 1px #dee1e3;
+    border-top: solid 1px #dee1e3;
     padding-bottom: 40px;
 }
 .smart h2 {
@@ -136,25 +155,25 @@ body {
     padding-right: 14px;
     padding-left: 14px;
     width: 300px;
-    border-right: solid 2px #dee1e3;
-    border-top: solid 2px #dee1e3;
+    border-right: solid 1px #dee1e3;
+    border-top: solid 1px #dee1e3;
     padding-bottom: 40px;
 }
 .stable {
     padding: 0px 14px 40px 14px;
     margin: 0;
-    border-top: solid 2px #dee1e3;
+    border-top: solid 1px #dee1e3;
 }
 .more {
+    font-family: 'fjalla One', sans-serif;
     color: white;
     text-decoration: none;
-    padding: 8px;
+    padding: 11px 10px;
     width: 50px;
     display: block;
     background-color: #203447;
     text-align: center;
-    border-radius: 6px;
-    font-size: 14px;
+    border-radius: 8px;
 }
 .more:hover {
     background-color: #fc8700;
@@ -162,19 +181,26 @@ body {
 .footer {
     color: #fff;
     background-image: linear-gradient(to bottom, #37587a, #2b4761, #20364a, #162634, #0d171f);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.footer h2 {
+    font-family: 'fjalla One', sans-serif;
+    text-align: left;
 }
 .footer ul {
+    list-style-position: inside;
     text-align: left;
     padding: 0;
 }
 .footer ul li {
-    margin-block-start: 15px;
     font-size: 12px;
 }
 .footer ul li img {
     float: left;
 }
 .bullets ul {
+    line-height: 30px;
     list-style-image: url("../images/bullet.png");
 }
 .dates h2 {
@@ -202,10 +228,14 @@ body {
     padding-left: 10px;
 }
 .dates li p {
-    line-height: 14px;
+    font-size: 14px;
+    margin-top: 2px;
+    line-height: 20px;
+    opacity: .2
 }
 .dates li h3 {
     opacity: .9;
+    margin-bottom: 2px;
 }
 .clearfix { 
     content: "."; 
@@ -226,6 +256,33 @@ body {
 .opportunities {
     list-style-image: url("../images/chatbox-bullet.png")
 }
+.opportunities ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.opportunities ul li p {
+    line-height: 18px;
+    margin-top: 2px;
+    font-size: 14px;
+    opacity: .2;
+    margin-left: 21px;
+}
 .active-button {
     background-color: #fc8700;
+}
+.copyright-wrapper {
+    display: block;
+    height: 100px;
+    background-color: #0b1016;
+    text-align: left;
+}
+.copyright-child {
+    margin-left: 0;
+    margin-top: 20px;
+}
+.copyright-wrapper a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    opacity: .2;
 }
